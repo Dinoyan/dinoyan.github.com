@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You've Got This, Lilaani</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .name-header {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .quote-card {
+            background: white;
+            border-radius: 30px;
+            padding: 60px 50px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .quote-text {
+            font-size: 2em;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .quote-author {
+            font-size: 1.2em;
+            color: #667eea;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .name-header {
+                font-size: 2em;
+            }
+            
+            .quote-card {
+                padding: 40px 30px;
+            }
+            
+            .quote-text {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="name-header">Hi Marshmallow</h1>
+        <div class="quote-card">
+            <div class="quote-text">
+                You're already doing a doctor's work—supporting your uncle with Usher syndrome, helping someone fill out forms at your mom's appointment. You don't just study medicine, you live it. Tomorrow, show them the physician you already are.
+            </div>
+            <div class="quote-author">— You've Got This ✨</div>
+        </div>
+    </div>
+</body>
+</html>
